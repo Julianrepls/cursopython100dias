@@ -76,7 +76,7 @@ while True:
             print()
 
     elif menu == "view":
-        print(f"{printList:<35}")
+        
         printList()
         print()
 
