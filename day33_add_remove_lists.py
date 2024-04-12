@@ -57,14 +57,14 @@ def printList():
 
 
 while True:
-    menu = input("Do you want to Add, edit or view the list?: ")
+    menu = input("Do you want to Add, remove or view the list?: ")
     if menu == "add":
         item = input("What do you to add?: ")
         myList.append(item)  # a commun error is poner al reves: item.append(myAgend)
         print(f"\033[34m{item}\033[0m was added to the list")
         print()
         
-    elif menu == "edit":
+    elif menu == "remove":
         item = input("What do you want to remove?: ")
         
         if item in myList:
