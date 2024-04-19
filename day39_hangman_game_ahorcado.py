@@ -1,6 +1,6 @@
 import random
 
-list =["capibara", "lemur", "galago", "comadreja", "tejon"]
+list =["capibara", "lemur", "tiger", "shark", "tejon"]
 
 letterpicked = []
 
@@ -8,9 +8,9 @@ word = random.choice(list)
 lives = 5
 
 while True:
-    letter = input("di una letra: ")
+    letter = input("Pick a letter: ")
     if letter in letterpicked:
-        print("esa letra ya la has elegido")
+        print("You already picked")
         continue
     letterpicked.append(letter)
     if letter in word:
@@ -35,7 +35,7 @@ while True:
         break
         
     if lives <=0:
-        print(f"te fuiste, the answer was {word}")
+        print(f"You lose, the answer was {word}")
         break
     else:
         print(f"only have {lives}")
