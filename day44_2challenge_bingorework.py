@@ -17,7 +17,8 @@ def createCard():
   numbers = []
   for i in range(8):
     num = ran()
-    while num in numbers:
+
+    while num in numbers:  #con este buclue hacemos que no existan números duplicados
       num = ran()
     numbers.append(ran())
   
